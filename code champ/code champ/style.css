@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main--color: #e3e8e4;
+    --primary-color: #363636;
+    --main-font: "Playfair Display SC", serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+ul li {
+    display: inline;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    margin-left: 4rem;
+}
+
+ul li a:hover {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.btn-fill {
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background: transparent;
+    border: none;
+    margin-left: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* head start */
+header {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-container {
+    margin-left: 6rem;
+}
+
+.main-headings {
+    font-size: 4rem;
+    font-family: var(--main-font);
+    color: grey;
+    margin-bottom: 2rem;
+}
+
+.main-headings span {
+    color: black;
+}
+
+.primary-headings {
+    max-width: 500px;
+    font-family: sans-serif;
+    line-height: 25px;
+    margin-bottom: 2rem;
+}
+
+.img-container {
+    width: 500px;
+    height: 500px;
+    background-color: #964B01;
+    border-radius: 100%;
+}
+
+.img-container img {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+/* head end */
+
+/* popularity start */
+.popularity {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.popularity div {
+    margin-right: 5rem;
+}
+
+.popularity div h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #34343e;
+    font-family: var(--main-font);
+}
+
+.popularity div p {
+    color: #34343e;
+    font-family: sans-serif;
+}
+/* popularity end */
+
+/* product start */
+/* .product-container {
+    height: 100vh;
+} */
+
+.product-container .btn-fill{
+    margin-left: 40rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    cursor: pointer;
+}
+.product-heading {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    font-size: 4rem;
+    color: #0000004f;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.product .product-img {
+    background-color: var(--main--color);
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    padding: 30px;
+}
+
+.product .product-img .img {
+    width: 280px;
+    height: 280px;
+}
+
+.product .product-img .img-one {
+    width: 260px;
+    height: 260px;
+    background: url(image/Ultra\ Male.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    /* width: 150px;
+    height: 150px; */
+}
+
+.product .product-img .img-two {
+    width: 260px;
+    height: 260px;
+    background: url(image/le\ beau\ le\ parfum.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.product .product-img .img-three {
+    width: 260px;
+    height: 260px;
+    background: url(image/Le\ Male.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.product .product-img .img-jone {
+    width: 260px;
+    height: 270px;
+    background: url(image/Jean_Paul_Gaultier_Classique_Pin-Up.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.product .product-img .img-jtwo {
+    width: 260px;
+    height: 270px;
+    background: url(image/La_Belle_Paradise_Garden_Jean_Paul_Gaultier.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.product .product-img .img-jthree {
+    width: 260px;
+    height: 270px;
+    background: url(image/Ganymede_and_Ganymede_EXTRAIT.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.product .product-img .img-four {
+    background: url(image/Jazz\ Club.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.product .product-img .img-five {
+    background: url(image/At\ the\ Barber.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.product .product-img .img-six {
+    background: url(image/By\ the\ fireplace.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.product .product-img .img-seven {
+    background: url(image/Autumn\ Vibes.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.product .product-img .img-eight {
+    background: url(image/Coffee\ Break.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.product .product-img .img-nine {
+    background: url(image/sailing_day.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.product .product-img .img-uone {
+    background: url(image/Valentino\ Uomo\ Edt.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.product .product-img .img-utwo {
+    background: url(image/Valentino_Born_In_Roma_Coral_Fantasy.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.product .product-img .img-uthree {
+    background: url(image/Valentino_Born_In_Roma_Uomo_Green.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.product .product-img .img-ufour {
+    background: url(image/Uomo_Born_In_Roma_Intense.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.product .product-img .img-ufive {
+    background: url(image/Valentino_Uomo_Intense.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.product .product-img .img-usix {
+    background: url(image/Valentino_Valentino_Uomo_Born_In_Roma.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.product-content {
+    background: var(--primary-color);
+    padding: 25px 25px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.one {
+    padding-left: 68px;
+    padding-right: 68px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.two {
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.three {
+    padding-left: 68px;
+    padding-right: 68px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.jone {
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.jtwo {
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.jthree {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.four {
+    padding-left: 68px;
+    padding-right: 68px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.five {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.six {
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.seven {
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.eight {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.nine {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.seven {
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.eight {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.nine {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.seven {
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.eight {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.nine {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.uone {
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.utwo {
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.uthree {
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.ufour {
+    padding-left: 68px;
+    padding-right: 68px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.ufive {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content.usix {
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content .product-name {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.b-container {
+    text-align: center;
+}
+
+.b-container button {
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+/* product end */
+
+/* why us section start */
+.why-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.why-us .img-layer {
+    width: 400px;
+    height: 400px;
+    background: #2e2f72;
+    border-radius: 100%;
+}
+
+.why-us .img-layer .img {
+    width: 450px;
+    height: 450px;
+    background: url(image/Ultra\ Male.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+
+.card {
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.card.card-fill {
+    background: #e3e8e490;
+    position: relative;
+}
+
+.card-fill .star{
+    width: 10px;
+    height: 10px;
+    padding: 15px;
+    border-radius: 100%;
+    background: var(--primary-color);
+    position: absolute;
+    top: -15px;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+}
+
+.card h1 {
+    color: black;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.card p {
+    color: #353535;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+}
+/* why us section end */
+
+/* feature start */
+
+.features {
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-container-one {
+    width: 400px;
+    height: 400px;
+    background-color: #6f4e37;
+    border-radius: 100%;
+}
+
+.img-container-two {
+    width: 450px;
+    height: 450px;
+    background-color: #411900;
+    border-radius: 100%;
+}
+/* feature end */
+
+/* footer start */
+
+footer {
+    background: #fff;
+    /* margin-top: 10rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    color: var(--primary-color);
+}
+
+footer .logo-container h1 {
+    font-size: 4rem;
+    font-family: var(--main-font);
+    margin-bottom: 20px;
+}
+
+footer .logo-container p {
+    max-width: 400px;
+    font-family: sans-serif;
+    line-height: 25px;
+}
+
+footer .about-company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .about-company .container{
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.about-company .container h1{
+    margin-bottom: 50px;
+}
+
+.about-company .container p {
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.logo-container p{
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 6rem;
+}
+/* footer end */
+
+
